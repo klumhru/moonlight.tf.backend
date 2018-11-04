@@ -1,1 +1,8 @@
 language: generic
+services:
+  - docker
+
+script:
+  - make init
+  - make plan
+  - make apply
